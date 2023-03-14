@@ -1,0 +1,58 @@
+html {
+    font-size: 62.5%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "title title"
+        "one two"
+        "btn btn"
+        "result result";
+    gap: 1rem;
+}
+
+h1 {
+    text-align: center;
+    grid-area: title;
+    font-size: 4rem;
+}
+
+#price {
+    width: 100%;
+    text-align: center;
+    grid-area: one;
+    font-size: 2rem;
+}
+
+#discount {
+    width: 100%;
+    text-align: center;
+    grid-area: two;
+    font-size: 2rem;
+}
+
+#calcular {
+    width: 50%;
+    text-align: center;
+    grid-area: btn;
+    font-size: 2rem;
+    position: relative;
+    left: 25%;
+    background-color: white;
+}
+
+#calcular:hover {
+    background-color: #f5f5f5;
+    background-color: coral;
+    transform: scale(1.1);
+}
+
+#result {
+    width: 100%;
+    text-align: center;
+    grid-area: result;
+    font-size: 6rem;
+}
